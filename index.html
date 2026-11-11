@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Frontend Challenge | IT Quiz</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="glow glow-one"></div><div class="glow glow-two"></div>
+  <main class="shell">
+    <header class="topbar">
+      <a class="brand" href="#"><span class="brand-mark">&lt;/&gt;</span><span>FRONTEND<span class="brand-accent"> CHALLENGE</span></span></a>
+      <div class="top-tag"><span class="live-dot"></span> IT KNOWLEDGE GAME</div>
+    </header>
+
+    <section class="hero" id="introScreen">
+      <div class="hero-copy">
+        <div class="eyebrow">✦ BILIMINGNI SINAB KO‘R</div>
+        <h1>Kodlash olamiga<br><span>sayohat!</span></h1>
+        <p>30 ta qiziqarli savol. HTML, CSS va JavaScript bo‘yicha bilimingni tekshir va o‘z natijangni ko‘r!</p>
+        <div class="stats-row">
+          <div class="stat"><strong>30</strong><small>savol</small></div>
+          <div class="stat"><strong>6</strong><small>mavzu</small></div>
+          <div class="stat"><strong>∞</strong><small>imkoniyat</small></div>
+        </div>
+      </div>
+      <div class="hero-art" aria-hidden="true">
+        <div class="orbit orbit-a"></div><div class="orbit orbit-b"></div>
+        <div class="code-card"><div class="code-dots"><i></i><i></i><i></i></div><div class="code-lines"><span class="purple">const</span> <span class="cyan">future</span> = <span class="pink">"developer"</span>;<br><span class="purple">if</span> (you.learn) {<br>&nbsp;&nbsp;level.<span class="cyan">up</span>();<br>}<br><span class="comment">// Keep coding!</span></div></div>
+        <div class="float-chip chip-html">HTML</div><div class="float-chip chip-css">CSS</div><div class="float-chip chip-js">JS</div>
+        <div class="spark spark-a">✦</div><div class="spark spark-b">✧</div>
+      </div>
+      <form class="start-panel" id="startForm">
+        <label for="studentName">Ism va familiyangiz</label>
+        <input id="studentName" name="studentName" maxlength="70" placeholder="Masalan: Ali Valiyev" required autocomplete="name" />
+        <button class="primary-btn" type="submit">O‘yinni boshlash <span>→</span></button>
+        <p class="privacy-note">Natijangiz o‘qituvchiga yuboriladi. Email manzilingiz so‘ralmaydi.</p>
+      </form>
+    </section>
+
+    <section class="quiz hidden" id="quizScreen">
+      <div class="quiz-heading"><div><div class="eyebrow" id="topicLabel">HTML ASOSLARI</div><h2>Bilimingni sinab ko‘r<span>!</span></h2></div><div class="question-count"><strong id="currentNumber">01</strong><span>/ 30</span></div></div>
+      <div class="progress-track"><div class="progress-fill" id="progressFill"></div></div>
+      <div class="quiz-meta"><span id="progressText">1-savol</span><span>Har bir to‘g‘ri javob — 1 ball</span></div>
+      <article class="question-card">
+        <div class="question-icon" id="questionIcon">&lt;/&gt;</div>
+        <h3 id="questionText">Savol matni</h3>
+        <div class="answers" id="answers"></div>
+        <div class="quiz-footer"><span class="hint">💡 Shoshilma, yaxshilab o‘yla!</span><button class="next-btn" id="nextBtn" disabled>Keyingi savol <span>→</span></button></div>
+      </article>
+    </section>
+
+    <section class="result hidden" id="resultScreen">
+      <div class="result-card">
+        <div class="trophy">🏆</div><div class="eyebrow">CHALLENGE YAKUNLANDI</div>
+        <h2>Ajoyib harakat, <span id="resultName">Do‘stim</span>!</h2>
+        <p class="result-subtitle">Siz 30 ta savolning barchasiga javob berdingiz.</p>
+        <div class="score-circle"><div><strong id="scoreValue">0</strong><span>/ 30 BALL</span></div></div>
+        <h3 id="resultMessage">Natijangiz</h3>
+        <p class="result-detail" id="resultDetail"></p>
+        <div class="result-actions"><button class="primary-btn" id="restartBtn">Qayta o‘ynash ↻</button></div>
+        <p class="send-status" id="sendStatus">Natija yuborilmoqda…</p>
+      </div>
+    </section>
+    <footer><span>© FRONTEND CHALLENGE</span><span>LEARN · PLAY · GROW</span></footer>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
