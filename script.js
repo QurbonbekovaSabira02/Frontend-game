@@ -1,6 +1,5 @@
 // Google Apps Script Web App URL manzilini shu yerga joylashtiring.
-const GOOGLE_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbyO3tcAxrnwIEWyZPZDEU7QHwhciCene3gZznuGtK2zSCdGdJjVjLL4zyQP97Nn_IU/exec"
-
+const GOOGLE_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbyO3tcAxrnwIEWyZPZDEU7QHwhciCene3gZznuGtK2zSCdGdJjVjLL4zyQP97Nn_IU/exec";
 const questions = [
   {topic:"HTML ASOSLARI",icon:"HTML",q:"HTML nimaning qisqartmasi?",a:["HyperText Markup Language","HighText Machine Language","Home Tool Markup Language","Hyper Transfer Main Link"],c:0},
   {topic:"HTML ASOSLARI",icon:"HTML",q:"Veb-sahifaning eng katta sarlavhasi qaysi teg bilan yoziladi?",a:["<h6>","<head>","<h1>","<title>"],c:2},
