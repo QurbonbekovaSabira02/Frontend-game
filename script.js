@@ -1,5 +1,5 @@
 // Google Apps Script Web App URL manzilini shu yerga joylashtiring.
-const GOOGLE_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbz48Tijb_yfe3-8yDSdOANE8IvLoruXBwesvPf_JryLbjy59wV6Jm-D2e3J0dAQiRU/exec"
+const GOOGLE_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbyO3tcAxrnwIEWyZPZDEU7QHwhciCene3gZznuGtK2zSCdGdJjVjLL4zyQP97Nn_IU/exec"
 
 const questions = [
   {topic:"HTML ASOSLARI",icon:"HTML",q:"HTML nimaning qisqartmasi?",a:["HyperText Markup Language","HighText Machine Language","Home Tool Markup Language","Hyper Transfer Main Link"],c:0},
